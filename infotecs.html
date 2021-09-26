@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="infotecs.css">
+
+    <title>Infotecs</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="half-body">
+            <table class="table">
+                <thead id="people-head">
+                    <tr>
+                        <th data-sort data-key="lastName">Last Name</th>
+                        <th data-sort data-key="firstName">First Name</th>
+                        <th data-sort data-key="about">About</th>
+                        <th data-sort data-key="eyeColor">Eye color</th>
+                    </tr>
+                </thead>
+                <tbody id="people-body">
+                </tbody>
+            </table>
+        </div>
+        <div class="half-body" id="formUpdatePerson" hidden>
+            <h3 class="title">Update information</h3>
+            <div class="update-person">
+                <form>
+                    <input type="hidden" value="" id="update-id">
+                    <div>
+                        <label for="update-last">Last Name</label>
+                        <input type="text" id="update-last" required>
+                    </div>
+                    <div>
+                        <label for="update-first">First Name</label>
+                        <input type="text" id="update-first" required>
+                    </div>
+                    <div>
+                        <label for="update-about">About</label>
+                        <input type="text" id="update-about" required>
+                    </div>
+                    <div>
+                        <label for="update-eyeColor">Eye color</label>
+                        <select id="update-eyeColor">
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <button id="update-person-close" type="button">Close</button>
+                <button type="button" id="update-person-save">Save</button>
+            </div>
+        </div>
+    </div>
+    <script src="infotecs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+.half-body{
+    width: 50%;
+    margin: 10px 0;
+}
+.truncate-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.sort-asc::after{
+    content: "\2191"
+}
+.sort-desc::after{
+    content: "\2193"
+}
+.hidden{
+    display: none;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.blue{
+    height: 12px;
+    width: 12px;
+    background-color: blue;
+}
+.brown{
+    height: 12px;
+    width: 12px;
+    background-color: brown;
+}
+.red{
+    height: 12px;
+    width: 12px;
+    background-color: red;
+}
+.green{
+    height: 12px;
+    width: 12px;
+    background-color: green;
+}
